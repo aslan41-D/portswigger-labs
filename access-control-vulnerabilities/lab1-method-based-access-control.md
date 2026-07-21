@@ -5,11 +5,11 @@
 - **Difficulty Level:** Practitioner
 - **Date:** 2026-07-20
 
-## 📌 Summary
+##  Summary
 
 In this lab, it was discovered that the server performs authorization checks only on POST requests but bypasses this check on GET requests. This vulnerability allowed an unauthorized user to perform an operation requiring admin privileges by changing the HTTP method.
 
-## 🔍 Discovery Phase
+##  Discovery Phase
 
 1. **Logged in with the admin account** and analyzed the POST request made to the `/admin-roles` endpoint via Burp Suite.
 
@@ -48,7 +48,7 @@ Content-Length: 14
 "Unauthorized
 As expected, the unauthorized user was unable to perform this operation.
 
-🚀 Exploiting the Vulnerability
+ Exploiting the Vulnerability
 The POST request was changed to a GET request and resubmitted with the same parameters.
 
 Request (GET - using the wiener account):
@@ -71,6 +71,7 @@ Result: The authorization check was bypassed using the GET method, and the lab w
 On the server side, the same authorization check must be applied for all HTTP methods (GET, POST, PUT, DELETE, etc.).
 
 Authorization checks should be based on user role and operation, not on the method.
+<img width="1251" height="620" alt="Ekran Görüntüsü 2026-07-20 13-39-16" src="https://github.com/user-attachments/assets/c570a2b9-f95d-4e39-8593-e211be823340" />
 
 Session information and permission levels must be verified for every request received from a user.
 
