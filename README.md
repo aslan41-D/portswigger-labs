@@ -5,16 +5,13 @@ This repository contains the solutions (write-ups) and screenshots for the labs 
 ## Categories
 
 - [Access Control Vulnerabilities](access-control-vulnerabilities/)
+-  API testing (api-testing-vulnerabilities-notes/)
 - Authentication (coming soon)
-- SQL Injection (coming soon)
 - XSS (coming soon)
 - ...
 
 ## Progress Status
 
-| Category | Completed | Total |
-|----------|------------|--------|
-| Access Control | 3 | 3 |
 
 ---
 
