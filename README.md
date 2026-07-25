@@ -6,7 +6,7 @@ This repository contains the solutions (write-ups) and screenshots for the labs 
 
 - [Access Control Vulnerabilities](access-control-vulnerabilities/)
 -  [API testing](api-testing-vulnerabilities-notes/)
-- Authentication (coming soon)
+- [Authentication](authentication/)
 - XSS (coming soon)
 - ...
 
